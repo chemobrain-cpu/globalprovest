@@ -61,13 +61,13 @@
     font-family: 'ABeeZee';
     padding-top: 15px;
     padding-bottom: 15px;
-    color:#fff;
+    color:#000000;
     background-color: transparent;
 
 }
 
 /* When the dropdown is expanded, change the text color */
-select:focus {
+select {
     color: black;
     background-color: white;
   }

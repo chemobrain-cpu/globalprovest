@@ -151,7 +151,7 @@ const styles = {
   label: {
     fontWeight: 500,
     fontSize: 14,
-    color: '#fff',
+    color: '#000000ff',
   },
   select: {
     padding: 10,
@@ -189,9 +189,7 @@ const styles = {
     width: '100%',
     height: 300,
   },
-  label: {
-    color: 'black',
-  }
+
 };
 
 export default MultiCoinChart;
