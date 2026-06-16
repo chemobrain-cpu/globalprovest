@@ -1,0 +1,154 @@
+/* Base screen container */
+.screenContainer {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  width: 100vw;
+  background-color: #0C1125;
+}
+
+.screenContainer h1 {
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 1000;
+}
+
+/* Form container */
+.rightformcontainer {
+  width: 300px;
+  max-width: 600px;
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+
+.rightformcontainer h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Navigation Header */
+.navigate {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navigate span {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color:rgb(229, 229, 229)
+}
+
+.navigate h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color:rgb(229, 229, 229)
+}
+
+/* Form sections */
+.inputcontainer {
+  padding: 10px 0;
+}
+
+.passportheading {
+  text-align: center;
+  background-color: #4F46E5;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Image preview */
+.imagePreviewContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imagePreview {
+  width: 90%;
+  height: 120px;
+  background-color: #ececec;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Input card */
+.formCard {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* Submit button */
+.submit input {
+  width: 100%;
+  background-color: #4F46E5;
+  border: none;
+  height: 48px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit input::placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+/* Error text */
+.errorText {
+  font-size: 1rem;
+  color: var(--color-red);
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media screen and (max-width: 768px) {
+  .rightformcontainer {
+    padding: 15px;
+  }
+
+  .navigate span {
+    margin-right: 10px;
+  }
+
+  .screenContainer h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .screenContainer {
+    width:100vw;
+    margin: 0px;
+    padding: 5px;
+  }
+
+  .rightformcontainer {
+    border: none;
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .screenContainer h1 {
+    font-size: 1.6rem;
+  }
+
+  .navigate h2 {
+    font-size: 1.2rem;
+  }
+}
+

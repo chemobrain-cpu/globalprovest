@@ -1,0 +1,654 @@
+/* Main Layout */
+.dashboard {
+    display: flex;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+  .seedWarning{
+    background-color: rgb(255, 248, 236);
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1px;
+    margin: 10px;
+    
+}
+label{
+  color:rgba(215, 215, 215, 1)
+}
+
+.inputCopyWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.inputCopyWrapper button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+
+  .payNowBtn {
+    background-color: #231f65;
+    color: white;
+    border: none;
+    padding: 13px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+.dashboard .leftSection {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.dashboard .mainSection {
+    width: 80%;
+    margin-left: 5px;
+    padding: 0px;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* styling the balance section */
+.dashboardContent {
+    width: 100%;
+}
+
+
+
+
+
+
+/*desktop styling*/
+.desktopMainSection {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.desktopMainSectionleft {
+    width: 50%
+}
+
+.desktopMainSectionright {
+    width: 50%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-bottom: 2rem;
+}
+
+.card,
+.historyCard {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  background-color:  rgba(243, 243, 243, 1);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1.25rem;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  background-color:  white;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+  border: none;
+  color:black
+}
+
+.input,.select {
+  width: 95%;
+  border:1px solid #a4a4a4;
+}
+
+
+.input:focus,.select:focus{
+  border: 1px solid #fff;
+}
+
+
+.input::placeholder {
+  color: #bebebe; /* Replace with any color code */
+  opacity: 1;  /* Optional: make sure it's fully visible */
+}
+
+.button {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4039be;
+}
+
+.emptyText {
+  font-size: 0.95rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+.tableWrapper {
+  box-shadow: 3px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  overflow-x: auto;
+  background-color:  #4f46e5;
+}
+
+.tradeTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.tradeTable th,
+.tradeTable td {
+  padding: 1rem;
+  color: #f8f8f8;
+}
+
+.placeholderRow {
+  height: 3rem;
+  text-align: center;
+  color: #aaa;
+}
+
+/* =========================
+   TICKER
+========================= */
+
+.tickerTape {
+  overflow: hidden;
+  background: white;
+  border-radius: 18px;
+  padding: 14px 0;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+}
+
+.tickerInner {
+  display: flex;
+  gap: 40px;
+  white-space: nowrap;
+  animation: scrollTicker 60s linear infinite;
+}
+
+.tickerItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.coinIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.coinName {
+  color: #111827;
+}
+
+.priceUp {
+  color: #16a34a;
+}
+
+.priceDown {
+  color: #dc2626;
+}
+
+@keyframes scrollTicker {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.payNowBtn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 13px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 850px) {
+  .dashboard .leftSection {
+    width: 18%;
+  }
+
+  .dashboard .mainSection {
+    width: 82%;
+  }
+
+  .title {
+    width: 30%;
+  }
+
+  .buttonContainer {
+    width: 70%;
+  }
+
+  .dashboardContent {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    width: 20%;
+  }
+
+  .buttonContainer {
+    width: 80%;
+  }
+
+  .dashboardContent {
+    width: 80%;
+  }
+
+  .tradeSummaryCard {
+    width: 95%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    display: none;
+  }
+
+  .buttonContainer {
+    display: none;
+  }
+
+  .dashboard .leftSection {
+    display: none;
+  }
+
+  .dashboard .mainSection {
+    width: 100%;
+  }
+
+  .headerContainer {
+    background: transparent;
+    padding: 0px;
+    box-shadow: none;
+  }
+
+  .mobileHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dashboard .mainSection {
+    margin-left: 0px;
+  }
+
+  .balanceCard {
+    display: block;
+  }
+
+  .dashboardContent {
+    width: 100%;
+  }
+
+  .tabsContainer {
+    display: block;
+  }
+
+  .desktopbalanceSection {
+    display: none;
+  }
+
+  .desktoptabsContainer {
+    display: none;
+  }
+
+  .desktoptabContent {
+    display: none;
+  }
+
+  .rightPanel {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+.withdrawalCard {
+  width: 100%;
+
+  max-width: 550px;
+
+  background: #fff;
+
+  border-radius: 24px;
+
+  padding: clamp(20px, 4vw, 32px);
+
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 15px 40px rgba(79, 70, 229, 0.08);
+}
+
+
+@media (max-width: 768px) {
+  .withdrawalCard {
+    max-width: 100%;
+    margin: 15px 0;
+    border-radius: 20px;
+  }
+}
+.withdrawIcon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #6366f1
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 28px;
+
+  margin-bottom: 20px;
+}
+
+.withdrawTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.progressWrapper {
+  width: 100%;
+  height: 10px;
+
+  background: #ececf7;
+
+  border-radius: 50px;
+
+  overflow: hidden;
+
+  margin-bottom: 24px;
+}
+
+.progressFill {
+  height: 100%;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #6366f1
+  );
+
+  border-radius: 50px;
+}
+
+.withdrawText {
+  text-align: center;
+
+  color: #6b7280;
+
+  margin-bottom: 25px;
+
+  font-size: 15px;
+}
+
+.inputGroup {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-weight: 600;
+
+  color: #4f46e5;
+}
+
+.withdrawInput {
+  width: 90%;
+  height: 45px;
+
+  border-radius: 10px;
+
+  border: 1px solid #e5e7eb;
+
+  padding: 0 16px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: .3s;
+}
+
+.withdrawInput:focus {
+  border-color: #4f46e5;
+
+  box-shadow:
+    0 0 0 4px rgba(79,70,229,.12);
+}
+
+.proceedButton {
+  width: 100%;
+
+  height: 52px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #6366f1
+  );
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  margin-bottom: 14px;
+}
+
+.getCodeButton {
+  border: none;
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.getCodeButton:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,.55);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  padding: 20px;
+}
+
+.modalCard {
+  width: 100%;
+  max-width: 550px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  position: relative;
+
+  animation: modalPop .25s ease;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

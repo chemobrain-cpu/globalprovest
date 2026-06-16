@@ -1,0 +1,86 @@
+.card {
+    background-color: #1c1e2f;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 14px;
+    width:80%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .status {
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    color: white;
+  }
+  
+  .active {
+    background-color: #22c55e; /* green */
+  }
+  
+  .paused {
+    background-color: #facc15; /* yellow */
+  }
+  
+  .completed {
+    background-color: #3b82f6; /* blue */
+  }
+  
+  .expired {
+    background-color: #ef4444; /* red */
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #d1d5db;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .alertYellow,
+  .alertBlue,
+  .alertRed {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-top: 16px;
+  }
+  
+  .alertYellow {
+    color: #facc15;
+  }
+  
+  .alertBlue {
+    color: #60a5fa;
+  }
+  
+  .alertRed {
+    color: #f87171;
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  

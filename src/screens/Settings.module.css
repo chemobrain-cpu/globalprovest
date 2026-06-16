@@ -1,0 +1,339 @@
+/* Main Layout */
+.dashboard {
+    display: flex;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+.dashboard .leftSection {
+    width: 20%;
+
+}
+
+.dashboard .leftSection,
+.sidebarContent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebarContent {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+
+
+
+
+
+
+
+.dashboard .mainSection {
+    width: 80%;
+    margin-left: 5px;
+    padding: 0px;
+    justify-content: flex-start;
+    overflow-y: scroll;
+
+
+}
+
+
+
+
+
+
+
+/*desktop styling*/
+.desktopMainSection {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    /* Scope the ::before within this section */
+    overflow: hidden;
+}
+
+
+
+.dashboardContent {
+    width: 100%;
+    display: flex;
+}
+
+
+
+.dashboardContentleft {
+    width: 50%
+}
+
+.dashboardContentright {
+    width: 50%;
+}
+
+
+
+
+
+
+/*  right dashboard styles*/
+
+
+
+.rightPanel {
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+/* asset style*/
+
+
+
+
+
+
+
+.settingsSection {
+    padding:10px;
+    padding-top: 5px;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin-bottom: 0px;
+ 
+}
+
+
+
+.settingsTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #020202;
+}
+
+
+.settingsItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    font-size: 1.1rem;
+    color: #dedede;
+    transition: background 0.3s ease;
+    border-radius: 20px;
+    margin-bottom: 13px;
+    background-color:  #593bd8;
+ 
+}
+
+.icon {
+    margin-right: 12px;
+    color: #dedede;
+    transition: transform 0.3s ease;
+  }
+  
+  .settingsItem:hover .icon {
+    transform: scale(1.1);
+  }
+  
+
+.settingsItem:hover {
+    cursor: pointer;
+}
+
+.settingRight {
+    font-weight: 500;
+    color: #dedede;
+}
+
+/* Toggle switch style */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #4a3aff;
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    .navItem p {
+        display: none;
+    }
+
+    .navItem {
+        padding: 12px;
+        display: flex;
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .dashboard .leftSection {
+        width: 18%;
+    }
+
+    .dashboard .mainSection {
+        width: 82%;
+    }
+
+    .title {
+        width: 30%
+    }
+
+    .buttonContainer {
+        width: 70%
+    }
+
+    .dashboardContent {
+        width: 80%;
+
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    .title {
+        width: 20%
+    }
+
+    .buttonContainer {
+        width: 80%
+    }
+
+    .dashboardContent {
+        width: 80%;
+
+    }
+}
+
+/* mobile screen*/
+@media (max-width: 600px) {
+
+    .title {
+        display: none;
+    }
+
+    .buttonContainer {
+        display: none;
+    }
+
+    .dashboard .leftSection {
+        display: none;
+    }
+
+
+    .dashboard .mainSection {
+        width: 100%;
+    }
+
+    .headerContainer {
+        background: transparent;
+        padding: 0px;
+        box-shadow: none;
+
+    }
+
+
+
+    .mobileHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dashboard .mainSection {
+        margin-left: 0px;
+    }
+
+
+
+
+    .dashboardContent {
+        width: 100%;
+    }
+
+
+    .rightPanel {
+        display: none;
+    }
+
+    .dashboardContentleft {
+        width: 100%;
+    }
+
+    .dashboardContentright {
+        display: none;
+    }
+
+    .settingsSection {
+    
+    }
+
+}
