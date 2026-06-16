@@ -87,11 +87,11 @@ const Withdraw = () => {
       return;
     }
 
-    /*if (Number(user?.availableBalance ?? 0) < Number(amount)) {
+    if (Number(user?.availableBalance ?? 0) < Number(amount)) {
       setAuthInfo('Insufficient fund');
       setIsAuthError(true);
       return;
-    }*/
+    }
     if (!user?.isImfCodeVerified) {
       return setWithdrawModal({
         open: true,
