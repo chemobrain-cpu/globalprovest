@@ -124,7 +124,7 @@ const LoginScreen = () => {
                     <p className={styles.error}>{isPasswordValid}</p>
 
                     <button
-                        className={`${styles.button} ${isDisabled ? styles.disabledButton : ''}`}
+                        className={`${styles.button} `}
                         disabled={isDisabled}
                         onClick={submitHandler}
                     >
